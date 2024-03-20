@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="loginPage">
+        <form id="loginForm" action="cff.html" method="post">
+            <h2>Login</h2>
+            <input type="text" placeholder="Username" required>
+            <input type="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+    <style>
+#logo{
+    margin-bottom: 20px;
+    background-size: cover;
+}
+#loginPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#loginForm {
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#loginForm h2 {
+    margin-top: 0;
+}
+
+#loginForm input[type="text"],
+#loginForm input[type="password"],
+#loginForm button {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#loginForm button {
+    background-color: #e1c796ee;
+    color: #1a1919;
+    cursor: pointer;
+}
+</style>
+<script>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.getElementById("loginForm").addEventListener("submit", function(event) {
+                event.preventDefault(); // Prevent the form from submitting normally
+                
+                // Get the username and password input values
+                var username = document.querySelector("#loginForm input[type='text']").value;
+                var password = document.querySelector("#loginForm input[type='password']").value;
+        
+                // You can add your validation logic here, for now, I'm assuming a simple check
+                if (username === "paridhi" && password === "vansh") {
+                    // If login is successful, redirect to main page
+                    window.location.href = "cff.html";
+                } else {
+                    // If login is unsuccessful, alert the user
+                    alert("Invalid username or password. Please try again.");
+                }
+            });
+        });
+</script>
+        
+</body>
+</html>

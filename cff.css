@@ -1,0 +1,169 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color:#ffffff;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.logo {
+    margin-bottom: 20px;
+    background-size: cover;
+
+}
+
+.logo img {
+    height: 300px;
+    width: 300px;
+    background-size: cover;
+}
+#menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#loginPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#loginForm {
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#loginForm h2 {
+    margin-top: 0;
+}
+
+#loginForm input[type="text"],
+#loginForm input[type="password"],
+#loginForm button {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#loginForm button {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+.drink-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.drink {
+    margin: 20px;
+    text-align: center;
+}
+
+.drink img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.price {
+    margin-top: 10px;
+}
+.add-to-cart {
+    background-color: #8B4513;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.add-to-cart:hover {
+    background-color: #A0522D;
+}
+/* Cart Section */
+#cart, #order-placement, #checkout-success {
+    display: none;
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+#cart h2, #order-placement h2, #checkout-success h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+#cart-items {
+    list-style-type: none;
+    padding: 0;
+}
+
+#cart-items li {
+    margin-bottom: 10px;
+}
+
+#place-order, #checkout {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#place-order:hover, #checkout:hover {
+    background-color: #0056b3;
+}
+
+/* Additional styling */
+input[type="radio"] {
+    margin-right: 5px;
+}
+/* Style for navbar */
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Ensures it stays on top of other content */
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.navbar .cart-icon {
+    float: right;
+}
+body {
+    padding-top: 50px; /* Adjust this value based on your navbar height */
+}
