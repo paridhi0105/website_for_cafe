@@ -1,7 +1,13 @@
+*{
+    overflow-x: hidden;
+}
+
+
 body {
     margin: 0;
     padding: 0;
     background-color:#ffffff;
+  
 }
 
 .container {
@@ -9,6 +15,8 @@ body {
     flex-direction: column;
     align-items: center;
     padding-top: 20px;
+    background-color: #eee7dd;
+    transform: scale(1.4);
 }
 
 .logo {
